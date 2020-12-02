@@ -9,6 +9,9 @@ $baraccent: #fb8f2c !important;
 $penbg: #f26c4f !important;
 $socialprime: #00aced !important;
 $footerfont: #989898 !important;
+$spiderred: #f05154 !important;
+$spidergreen: #63cd68 !important;
+$spiderblue: #77d2d6 !important;
 
 %primebutton{
 	display: block;
@@ -105,6 +108,7 @@ a{
     margin-left: auto;
     margin-top: 24px;
     margin-bottom: 24px;
+    transition: all 5s;
 }
 /*topheader*/
 .topheader{
@@ -173,12 +177,21 @@ a{
 	    	/*line-height: 35px;*/
 	    	font-weight: 800;
 	    	margin-bottom: 60px;
+
+	    	@media(max-width: 767px){
+	    		font-size: 40px;
+	    	}
 	    }
+
+	   
 	    h5{
 	    	font-size: 20px;
 	    	line-height: 35px;
 	    	font-weight: 700;
 	    	margin-bottom: 10px;
+	    	@media(max-width: 767px){
+	    		margin-bottom: 0 !important;
+	    	}
 	    }
 	    h6{
 	    	font-size: 14px;
@@ -257,6 +270,9 @@ a{
 	.btnuser{
 		margin:80px 0px;
 	}
+	&:hover .bar{
+		width: 100%;
+	}
 }
 /*services*/
 /*bannersteps*/
@@ -295,6 +311,10 @@ a{
 	P{
 		font-weight: 400;
 	}
+
+	&:hover .bar{
+		width: 100%;
+	}
 }
 /*bannersteps*/
 /*banneryellow*/
@@ -319,25 +339,84 @@ a{
 
 /*banner-spider*/
 .bannerspider{
-	padding: 50px;
-	.spider{
-		
-	}
-	.box{
-		.contents{
-			.deco{
-				.userborder{
-					i{}
-				}
-			}
-		}
+		margin-top: 50px;
+	.spiderholder{
+		padding: 120px 160px;
+		.btspider{}
+		.content{
+		    display: inline-block;
+		    position: absolute;
+		    .userborder{
+		    	position: relative;
+		    	width: 40px;
+		    	height: 40px;
+		    	margin-top: 40px;
+		    	border-radius: 5px;
+		    	display: inline-block;
+		    	i{
+		    		position: absolute;
+		    		top: 50%;
+		    		left: 50%;
+		    		@include transform(translate(-50%,-50%))
+		    	}
+		    }
+		    h6{
+		    	font-size: 16px;
+		    }
 
+		    .userborder::after{
+		    	content: "";
+		    	display: inline-block;
+		    	margin-bottom: 5px;
+		    	top: 0;
+		    	left: 0;
+		    	width: 40px;
+		        height: 40px;
+		        @include transform(rotate(45deg));
+		        border-radius: 5px;
+		        border: 2px solid;
+			}
+		}	
 	}
 }
-.top{}
-.bottom{}
-.right{}
-.left{}
+.spiderred{
+	i,h6{
+		color: $spiderred;
+	}
+	.userborder::after{
+		border-color: $spiderred;
+	}
+}
+.spidergreen{
+	i,h6{
+		color: $spidergreen;
+	}
+	.userborder::after{
+		border-color: $spidergreen;
+	}
+}
+.spiderblue{
+	i,h6{
+		color: $spiderblue;
+	}
+	.userborder::after{
+		border-color: $spiderblue;
+	}
+}
+.top{
+	top:0%;
+	padding: 0px 80px;
+	}
+.bottom{
+	bottom:0%;
+	padding: 0px 80px;
+}
+.right{right:0%;}
+.left{left:0%;}
+.middle{
+	top: 50%;
+	transform: translateY(-50%);
+}
 /*banner-spider*/
 
 /*bannerexperts*/
@@ -366,6 +445,9 @@ a{
 		color: #fba057;
 		font-weight: 300;
 		text-transform: uppercase;
+	}
+	&:hover .bar{
+		width: 100%;
 	}
 }
 /*bannerexperts*/
@@ -420,6 +502,17 @@ a{
 		transition: all 0.3s;
 		display: block;
 		.meta{
+				.col-1{
+					position: relative;
+					i{
+						position: absolute;
+						transform: translate(50%, -50%);
+						color: #FFF;
+						background: #f26c4f;
+						padding: 15px;
+						border-radius: 60px;
+					}
+				}
 				p{
 					font-size: 12px;
 					color: #6e6e6e !important;
@@ -445,6 +538,9 @@ a{
 		background: #FFF;
 		box-shadow:  5px 5px 10px #c8c8c8, 
 		             -5px -5px 10px #fafafa;
+	}
+	&:hover .bar{
+		width: 100%;
 	}
 
 }
@@ -580,6 +676,7 @@ footer{
 		    margin-top: 30px;
 		    border-radius: 30px;
 		    padding: 10px;
+		    padding-right: 45px;
 		}
 		.ftbtn{
 			border-radius: 60px;

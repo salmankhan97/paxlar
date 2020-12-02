@@ -79,7 +79,8 @@ a {
   margin-right: auto;
   margin-left: auto;
   margin-top: 24px;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  transition: all 5s; }
 
 /*topheader*/
 .topheader {
@@ -133,11 +134,17 @@ a {
       /*line-height: 35px;*/
       font-weight: 800;
       margin-bottom: 60px; }
+      @media (max-width: 767px) {
+        .banner1 .content h1 {
+          font-size: 40px; } }
     .banner1 .content h5 {
       font-size: 20px;
       line-height: 35px;
       font-weight: 700;
       margin-bottom: 10px; }
+      @media (max-width: 767px) {
+        .banner1 .content h5 {
+          margin-bottom: 0 !important; } }
     .banner1 .content h6 {
       font-size: 14px;
       line-height: 35px;
@@ -200,6 +207,8 @@ a {
     padding: 24px 0px; }
   .services .btnuser {
     margin: 80px 0px; }
+  .services:hover .bar {
+    width: 100%; }
 
 /*services*/
 /*bannersteps*/
@@ -233,6 +242,8 @@ a {
     font-weight: 700; }
   .bannersteps P {
     font-weight: 400; }
+  .bannersteps:hover .bar {
+    width: 100%; }
 
 /*bannersteps*/
 /*banneryellow*/
@@ -252,7 +263,78 @@ a {
 /*banneryellow*/
 /*banner-spider*/
 .bannerspider {
-  padding: 50px; }
+  margin-top: 50px; }
+  .bannerspider .spiderholder {
+    padding: 120px 160px; }
+    .bannerspider .spiderholder .content {
+      display: inline-block;
+      position: absolute; }
+      .bannerspider .spiderholder .content .userborder {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin-top: 40px;
+        border-radius: 5px;
+        display: inline-block; }
+        .bannerspider .spiderholder .content .userborder i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%); }
+      .bannerspider .spiderholder .content h6 {
+        font-size: 16px; }
+      .bannerspider .spiderholder .content .userborder::after {
+        content: "";
+        display: inline-block;
+        margin-bottom: 5px;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        border-radius: 5px;
+        border: 2px solid; }
+
+.spiderred i, .spiderred h6 {
+  color: #f05154 !important; }
+.spiderred .userborder::after {
+  border-color: #f05154 !important; }
+
+.spidergreen i, .spidergreen h6 {
+  color: #63cd68 !important; }
+.spidergreen .userborder::after {
+  border-color: #63cd68 !important; }
+
+.spiderblue i, .spiderblue h6 {
+  color: #77d2d6 !important; }
+.spiderblue .userborder::after {
+  border-color: #77d2d6 !important; }
+
+.top {
+  top: 0%;
+  padding: 0px 80px; }
+
+.bottom {
+  bottom: 0%;
+  padding: 0px 80px; }
+
+.right {
+  right: 0%; }
+
+.left {
+  left: 0%; }
+
+.middle {
+  top: 50%;
+  transform: translateY(-50%); }
 
 /*banner-spider*/
 /*bannerexperts*/
@@ -277,6 +359,8 @@ a {
     color: #fba057;
     font-weight: 300;
     text-transform: uppercase; }
+  .bannerexperts:hover .bar {
+    width: 100%; }
 
 /*bannerexperts*/
 /*consultationform*/
@@ -318,6 +402,15 @@ a {
     border-color: #e1e1e1;
     transition: all 0.3s;
     display: block; }
+    .blogs .content .meta .col-1 {
+      position: relative; }
+      .blogs .content .meta .col-1 i {
+        position: absolute;
+        transform: translate(50%, -50%);
+        color: #FFF;
+        background: #f26c4f;
+        padding: 15px;
+        border-radius: 60px; }
     .blogs .content .meta p {
       font-size: 12px;
       color: #6e6e6e !important;
@@ -334,6 +427,8 @@ a {
     color: initial;
     background: #FFF;
     box-shadow: 5px 5px 10px #c8c8c8, -5px -5px 10px #fafafa; }
+  .blogs:hover .bar {
+    width: 100%; }
 
 /*blogs*/
 /*userfeedback*/
@@ -434,7 +529,8 @@ footer {
       margin-top: 30px;
       margin-top: 30px;
       border-radius: 30px;
-      padding: 10px; }
+      padding: 10px;
+      padding-right: 45px; }
     footer .input-grp .ftbtn {
       border-radius: 60px;
       background: #ff9b1a !important;
