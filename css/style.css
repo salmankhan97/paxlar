@@ -434,8 +434,7 @@ a {
 .userfeedback .header span {
   margin-bottom: 0; }
 .userfeedback .carousel .carousel-inner .carousel-item {
-  padding-top: 24px;
-  margin-bottom: 80px; }
+  padding-top: 24px; }
   .userfeedback .carousel .carousel-inner .carousel-item .imgholder {
     display: inline-block;
     position: relative;
@@ -476,7 +475,8 @@ a {
 footer {
   background: #101010;
   border-top: 5px solid #ff9b1a !important;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  margin-top: 80px; }
   footer ul li a, footer ul li p {
     color: #989898 !important;
     transition: all 0.3s;

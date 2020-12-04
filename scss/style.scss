@@ -557,7 +557,6 @@ a{
 		.carousel-inner{
 			.carousel-item{
 				padding-top: 24px;
-				margin-bottom: 80px;
 				p{}
 				.imgholder{
 					display: inline-block;
@@ -609,6 +608,7 @@ footer{
 	background: #101010;
 	border-top: 5px solid $primeaccent;
 	padding-bottom: 80px;
+	margin-top: 80px;
 	ul{
 		li{
 			a,p{
