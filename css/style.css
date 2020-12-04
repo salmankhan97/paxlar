@@ -105,7 +105,8 @@ a {
     color: #161616;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 8px 17px; }
+    padding: 8px 17px;
+    transition: all 0.3s; }
   .navbar .navbar-nav .nav-item .nav-link:hover {
     color: #ff9b1a !important; }
   .navbar .navbar-nav .nav-item .btnuser {
@@ -265,7 +266,8 @@ a {
     padding: 120px 160px; }
     .bannerspider .spiderholder .content {
       display: inline-block;
-      position: absolute; }
+      position: absolute;
+      width: 150px; }
       .bannerspider .spiderholder .content .userborder {
         position: relative;
         width: 40px;
@@ -317,11 +319,11 @@ a {
 
 .top {
   top: 0%;
-  padding: 0px 80px; }
+  margin: 0px 80px; }
 
 .bottom {
   bottom: 0%;
-  padding: 0px 80px; }
+  margin: 0px 80px; }
 
 .right {
   right: 0%; }
@@ -554,7 +556,8 @@ footer {
     line-height: 35px;
     color: #737272;
     font-weight: 400;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: all 0.3s; }
   .bottomfooter .nav .nav-item .nav-link:hover {
     color: #ff9b1a !important; }
 

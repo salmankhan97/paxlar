@@ -142,6 +142,7 @@ a{
 				font-weight: 400;
 				text-transform: uppercase;
 				padding: 8px 17px; 
+				transition: all 0.3s;
 			}
 			.nav-link:hover{
 				color: $primeaccent;
@@ -343,6 +344,7 @@ a{
 		.content{
 		    display: inline-block;
 		    position: absolute;
+		    width: 150px;
 		    .userborder{
 		    	position: relative;
 		    	width: 40px;
@@ -402,11 +404,11 @@ a{
 }
 .top{
 	top:0%;
-	padding: 0px 80px;
+	margin: 0px 80px;
 	}
 .bottom{
 	bottom:0%;
-	padding: 0px 80px;
+	margin: 0px 80px;
 }
 .right{right:0%;}
 .left{left:0%;}
@@ -708,6 +710,7 @@ footer{
 				color: #737272;
 				font-weight: 400;
 				text-transform: uppercase;
+				transition: all 0.3s;
 			}
 			.nav-link:hover{
 				color: $primeaccent;
