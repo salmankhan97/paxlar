@@ -124,7 +124,17 @@ a {
   position: relative;
   font-family: "Raleway" !important;
   color: #efefef !important;
-  background-position: left; }
+  background-position: left;
+  z-index: 2; }
+  .banner1 #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: -1;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0; }
   .banner1 .content {
     	/*position: absolute;
         right: 50%;
@@ -433,21 +443,21 @@ a {
 /*userfeedback*/
 .userfeedback .header span {
   margin-bottom: 0; }
-.userfeedback .carousel .carousel-inner .carousel-item {
+.userfeedback .myCarousel .item {
   padding-top: 24px; }
-  .userfeedback .carousel .carousel-inner .carousel-item .imgholder {
+  .userfeedback .myCarousel .item .imgholder {
     display: inline-block;
     position: relative;
     margin-top: 80px;
     margin-bottom: 24px;
     width: 100px;
     height: 100px; }
-    .userfeedback .carousel .carousel-inner .carousel-item .imgholder img {
+    .userfeedback .myCarousel .item .imgholder img {
       border-radius: 60px;
       width: 100%;
       height: 100%;
       object-fit: cover; }
-    .userfeedback .carousel .carousel-inner .carousel-item .imgholder i {
+    .userfeedback .myCarousel .item .imgholder i {
       position: absolute;
       border: 3px solid #FFF;
       background: #ff9b1a !important;
@@ -457,12 +467,12 @@ a {
       bottom: 0;
       right: 0;
       border-radius: 60px; }
-  .userfeedback .carousel .carousel-inner .carousel-item h5 {
+  .userfeedback .myCarousel .item h5 {
     font-size: 18px;
     line-height: 22px;
     color: #1c1c1c;
     font-weight: 700; }
-  .userfeedback .carousel .carousel-inner .carousel-item h6 {
+  .userfeedback .myCarousel .item h6 {
     font-size: 14px;
     line-height: 22px;
     color: #fb8f2c;
